@@ -1,0 +1,24 @@
+﻿@page
+@model JoePizzeria.Pages.Checkout.ThankYouModel
+@{
+}
+
+<img class="center" src="/images/Order.png" />
+
+<h1>Thank You for ordering. Your Pizza will be delivered soon</h1>
+
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        
+        <p> Pizza ordered :  @Model.PizzaName </p>
+        <p> Order ID: @Model.OrderId</p>
+        
+        <p>Amount of your order is: Rs @Model.PizzaPrice</p>
+        <br />
+        <form class="btn" action="https://localhost:7249/Pizza/">
+            <i class="fa fa-home"></i>
+            <button type="submit">Home</button>
+        </form>
+        
+    </div>
+</div>
